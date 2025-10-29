@@ -1,0 +1,16 @@
+import { useState } from 'react'
+
+import './App.css'
+import RegistrationForm from './components/RegistrationForm'
+
+function App() {
+
+
+  return (
+    <>
+      <RegistrationForm />
+    </>
+  )
+}
+
+export default App
