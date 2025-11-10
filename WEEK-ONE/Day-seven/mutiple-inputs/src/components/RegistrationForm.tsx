@@ -23,6 +23,12 @@ function RegistrationForm() {
         console.log(FormData);
         setSubmitted(true);
     }
+
+    //function to reset data
+    function handleReset() {
+        setFormData({ name: "", email: "", role: "", message: "" });
+        setSubmitted(false);
+    }
     return (
         <div style={{ textAlign: "center", padding: "20px" }}>
             <h2>DreamHire Application Form</h2>
@@ -57,6 +63,7 @@ function RegistrationForm() {
                         onChange={handleChange}></textarea>
                     <br></br>
                     <button type='submit'>Submit</button>
+                    <button type='button' onClick={handleReset}>Reset</button>
                 </form>
             ) : (
                 <h3>Thank You , {formData.name}! Your application for {formData.role} has been submitted</h3>
