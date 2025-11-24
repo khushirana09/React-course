@@ -1,14 +1,15 @@
 import { useState } from 'react'
 
 import './App.css'
-import ErrorState from './components/ErrorState'
+import DeliveryApp from './component/DeliveryApp'
 
 function App() {
 
 
   return (
     <>
-      <ErrorState />
+      <DeliveryApp />
+
     </>
   )
 }

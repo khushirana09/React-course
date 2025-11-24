@@ -1,14 +1,14 @@
 import { useState } from 'react'
 
 import './App.css'
-import ErrorState from './components/ErrorState'
+import Memo from './components/Memo'
 
 function App() {
 
 
   return (
     <>
-      <ErrorState />
+      <Memo />
     </>
   )
 }
